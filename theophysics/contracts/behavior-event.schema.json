@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.theophysics.invalid/contracts/behavior-event-v1.json",
+  "title": "Theophysics local behavior event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "type", "occurredAt", "localOnly", "truthGrade"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "id": {"type": "string", "minLength": 1},
+    "type": {"enum": ["query_submitted", "result_impression", "result_opened", "click_depth", "active_dwell_time", "return_to_results", "repeated_visit", "saved", "crawler_preservation_requested", "media_download_requested", "usefulness_judgment", "query_reformulation"]},
+    "occurredAt": {"type": "string", "format": "date-time"},
+    "localOnly": {"const": true},
+    "truthGrade": {"type": "null"},
+    "query": {"type": "string"},
+    "result": {"$ref": "#/$defs/result"},
+    "position": {"type": "integer", "minimum": 1},
+    "durationMs": {"type": "integer", "minimum": 0},
+    "depth": {"type": "integer", "minimum": 0},
+    "judgment": {"enum": ["useful", "irrelevant", "hostile_control", "primary_source"]},
+    "details": {"type": "object"}
+  },
+  "$defs": {"result": {"type": "object", "additionalProperties": false, "required": ["url", "provider"], "properties": {"url": {"type": "string", "format": "uri"}, "provider": {"enum": ["marginalia", "local-index", "hister", "searxng", "brave", "exa"]}}}}
+}
