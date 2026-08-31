@@ -18,6 +18,7 @@ public enum SearchProfile {
     WIKI("wiki", SearchFilterDefaults.WIKI),
     DOCS("docs", SearchFilterDefaults.DOCS),
     CUSTOM("custom", SearchFilterDefaults.NO_FILTER), // gets special handling
+    THEOPHYSICS("theophysics", SearchFilterDefaults.THEOPHYSICS),
     ;
 
 

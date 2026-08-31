@@ -1,0 +1,10 @@
+services:
+  paperdoll:
+    image: eclipse-temurin:25-jdk
+    working_dir: /workspace
+    volumes:
+      - ../..:/workspace
+      - gradle-cache:/root/.gradle
+    ports: ["9999:9999"]
+    command: ["./gradlew", ":code:services-application:search-service:paperDoll", "-i"]
+volumes: {gradle-cache: {}}

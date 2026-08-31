@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- Transparent discovery preferences only. Agreement with any worldview is never promoted. -->
+<filter>
+    <terms-promote amount="0.5">special:academia</terms-promote>
+    <terms-promote amount="0.3">format:html123</terms-promote>
+    <terms-promote amount="0.3">js:false</terms-promote>
+</filter>

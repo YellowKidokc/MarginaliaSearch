@@ -1,0 +1,6 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema", "$id":"https://local.theophysics.invalid/contracts/crawl4ai-capture-v1.json",
+  "title":"Explicit Crawl4AI capture receipt", "type":"object", "additionalProperties":false,
+  "required":["schemaVersion","explicitUserIntent","sourceUrl","captureTime","htmlSha256","markdownProjection","crawlScope","failures","receiptLocation"],
+  "properties":{"schemaVersion":{"const":"1.0.0"},"explicitUserIntent":{"const":true},"sourceUrl":{"type":"string","format":"uri"},"captureTime":{"type":"string","format":"date-time"},"htmlSha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},"markdownProjection":{"type":"string"},"crawlScope":{"type":"object"},"failures":{"type":"array","items":{"type":"string"}},"receiptLocation":{"type":"string"}}
+}

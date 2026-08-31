@@ -14,7 +14,8 @@ public enum SearchFilterDefaults {
     FOOD("food.xml"),
     FORUM("forum.xml"),
     WIKI("wiki.xml"),
-    DOCS("docs.xml");
+    DOCS("docs.xml"),
+    THEOPHYSICS("theophysics.xml");
 
     SearchFilterDefaults(String fileName) {
         this.fileName = fileName;
