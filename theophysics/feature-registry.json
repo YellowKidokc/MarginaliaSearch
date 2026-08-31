@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "authority": "Research-workbench capabilities only; no result or capture is a truth grade or canon admission.",
+  "features": [
+    {
+      "id": "TP-QRY-001",
+      "name": "Stacked query composer",
+      "category": "query",
+      "phase": 1,
+      "status": "specified",
+      "extension_point": "search-service UI and query parser",
+      "default_enabled": true
+    },
+    {
+      "id": "TP-PRF-001",
+      "name": "Theophysics search profile",
+      "category": "classification",
+      "phase": 1,
+      "status": "specified",
+      "extension_point": "SearchProfile and search filters",
+      "default_enabled": false
+    },
+    {
+      "id": "TP-EVT-001",
+      "name": "Local research behavior ledger",
+      "category": "preference",
+      "phase": 2,
+      "status": "specified",
+      "extension_point": "new isolated local service",
+      "default_enabled": false
+    },
+    {
+      "id": "TP-RNK-001",
+      "name": "Explainable preference projection",
+      "category": "ranking",
+      "phase": 2,
+      "status": "specified",
+      "extension_point": "PersonalizedPageRank influence set",
+      "default_enabled": false
+    },
+    {
+      "id": "TP-CRL-001",
+      "name": "Preserve with Crawl4AI",
+      "category": "crawler",
+      "phase": 2,
+      "status": "specified",
+      "extension_point": "result action adapter",
+      "default_enabled": false
+    },
+    {
+      "id": "TP-CRL-002",
+      "name": "Submit to native crawl queue",
+      "category": "crawler",
+      "phase": 2,
+      "status": "existing-extension-point",
+      "extension_point": "SearchAddToCrawlQueueService",
+      "default_enabled": false
+    },
+    {
+      "id": "TP-ALT-001",
+      "name": "Alternate provider adapters",
+      "category": "federation",
+      "phase": 3,
+      "status": "specified",
+      "extension_point": "new provider adapter boundary",
+      "default_enabled": false
+    },
+    {
+      "id": "TP-MED-001",
+      "name": "Media URL capture",
+      "category": "media",
+      "phase": 3,
+      "status": "requires-existing-integration-discovery",
+      "extension_point": "result action adapter",
+      "default_enabled": false
+    }
+  ]
+}
