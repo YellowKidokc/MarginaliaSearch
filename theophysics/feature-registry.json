@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "features": [
+    {
+      "id": "workbench-shell",
+      "status": "runnable-local",
+      "surface": "search-service static resources"
+    },
+    {
+      "id": "marginalia-provider",
+      "status": "connected",
+      "contract": "normal Marginalia search URL"
+    },
+    {
+      "id": "local-behavior",
+      "status": "connected-localStorage-only",
+      "exportable": true
+    },
+    {
+      "id": "preference-projection",
+      "status": "inspectable-only",
+      "rankingMutation": false,
+      "extensionPoint": "nu.marginalia.ranking.domains.PersonalizedPageRank"
+    },
+    {
+      "id": "crawl4ai",
+      "status": "contract-only-explicit-action"
+    },
+    {
+      "id": "local-index",
+      "status": "not-connected"
+    },
+    {
+      "id": "hister",
+      "status": "not-connected"
+    },
+    {
+      "id": "searxng",
+      "status": "not-connected"
+    },
+    {
+      "id": "brave",
+      "status": "not-connected"
+    },
+    {
+      "id": "exa",
+      "status": "not-connected"
+    },
+    {
+      "id": "media-download",
+      "status": "not-connected"
+    },
+    {
+      "id": "url-markdown-local",
+      "status": "connected-local",
+      "writesRequireReview": true,
+      "immutableVersions": true,
+      "apiKeysInBrowser": false
+    },
+    {
+      "id": "jina-reader",
+      "status": "not-connected"
+    },
+    {
+      "id": "screenshotone",
+      "status": "not-connected-optional"
+    }
+  ]
+}

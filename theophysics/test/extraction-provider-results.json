@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0.0",
+  "testCases": [
+    {"kind": "ordinary article", "fixture": "/article", "providerSucceeded": "local", "result": "complete"},
+    {"kind": "JavaScript-rendered page", "fixture": "/javascript", "providerSucceeded": "local", "result": "partial-with-warning"},
+    {"kind": "failed or blocked page", "fixture": "/blocked", "providerSucceeded": null, "result": "failed-403", "fallbacksAttempted": []}
+  ],
+  "note": "Deterministic local fixtures; optional external fallbacks were not invoked."
+}

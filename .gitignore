@@ -16,3 +16,5 @@ bin/
 *.log
 *.hprof
 gradle.properties
+# Theophysics local research captures (never commit private research records)
+/theophysics/captures/

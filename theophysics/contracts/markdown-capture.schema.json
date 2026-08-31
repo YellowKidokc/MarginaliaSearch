@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.theophysics.invalid/contracts/markdown-capture-v1.json",
+  "title": "Immutable URL to Markdown capture receipt",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schemaVersion", "originalUrl", "pageTitle", "retrievedAt", "contentHash", "extractionMethod", "provider", "sourceReceipt", "evidenceStatus"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "originalUrl": {"type": "string", "format": "uri"},
+    "pageTitle": {"type": "string"},
+    "retrievedAt": {"type": "string", "format": "date-time"},
+    "contentHash": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "extractionMethod": {"type": "string"},
+    "provider": {"enum": ["local", "crawl4ai", "jina-reader", "screenshotone"]},
+    "sourceReceipt": {"type": "object"},
+    "evidenceStatus": {"const": "UNVERIFIED EXTRACTION — NOT ADMITTED CANON"},
+    "canonized": {"const": false}
+  }
+}
